@@ -1,0 +1,21 @@
+/* Weather_Station_JSON_Raw_Files YR 2016/2017/2018/2019/2020
+
+  E_Stage/2016/==> Raw_Table (Raw_Json_Data)
+                   ||                          
+                   ||                         Extract_Task
+                   ====> raw_data_stream =====================> transformed_table(Relational Table)
+                                         call SP_Extract_JSON()       ||                             
+                                                                      ||                             Aggregate_final_data Task
+                                                                      ======>transformed_data_stream =========================>Final_Table 
+                                                                                                     call SP_Aggregate_final()
+                                             
+                                                                                                     
+                                                                  
+  E_Stage/2017/==> Raw_Table (Raw_Json_Data)
+                   ||                          
+                   ||                         Extract_Task
+                   ====> raw_data_stream =====================> transformed_table(Relational Table)
+                                         call SP_Extract_JSON()       ||                             
+                                                                      ||                             Aggregate_final_data Task
+                                                                      ======>transformed_data_stream =========================>Final_Table 
+                                                                                                     call SP_Aggregate_final()                           */
